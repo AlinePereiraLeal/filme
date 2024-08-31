@@ -1,0 +1,148 @@
+body{
+    width: 70%;
+    margin: 0 auto;
+    background-color:cornsilk
+}
+
+.conteiner-filmes {
+    margin-top: 30px;
+
+}
+
+.conteiner-lista-filmes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.filme {
+    width: 230px;
+    text-align: start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.filme h2 {
+
+    color: blueviolet;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.filme p {
+    margin: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.filme img {
+    width: 100%;
+}
+
+.button-add {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.button-add:hover {
+background-color: blue;
+
+}
+
+.button:active {
+    background-color: blueviolet
+}
+
+.filme-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.filme-buttons a {
+    display: block;
+    width: 100%;
+}
+.editar-btn {
+    background-color: aliceblue;
+    color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0,3s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.editar-btn:hover {
+    background-color:brown;
+}
+ 
+.editar-btn:active {
+    background-color: cadetblue;
+}
+
+.deletar-btn {
+    background-color: aliceblue;
+    color:aqua;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.35)0px 5px 15px;
+}
+.deletar-btn:hover {
+    background-color: green;
+}
+.deletar-btn:active {
+    background-color: green;
+}
+
+
+
+.input-group{
+    padding: 10px;
+}
+
+.conteiner-form h2, .input-group label {
+    color:tomato;
+    font-weight: bold;
+}
+
+.input-group input {
+    display: block;
+    padding: 5px;
+    width: 250;
+}
+
+.enviar-form {
+background-color: yellowgreen;
+color: blue;
+border-radius: 10px;
+width: 150px;
+padding: 10px;
+font-weight: bold;
+border: none;
+cursor:pointer;
+transition-duration: 0.3s;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.enviar-form:hover {
+    background-color: cadetblue;
+}
+
+.enviar-form:active{
+    background-color: chocolate;
+}

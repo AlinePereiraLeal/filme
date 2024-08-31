@@ -1,0 +1,55 @@
+<!DOCTYPE html>  <!-- Tipo de documento HTML-->
+
+
+
+ <html lang="pt-br"xmlns:th="http://wwww.thymeleaf.org">
+<head>
+
+ <title>
+    Filmes vistos
+ </title>
+
+<link rel="stylesheet" href="/style.css">
+
+
+
+</head>
+<body>
+
+
+
+
+<div class="conteiner-filmes">
+    <div  class="conteiner-buttons">
+        <a href="/filme/form">
+            <button class="button-add">
+                adicionar novo filme
+            </button>
+        </a>
+    </div>
+    <div class="contairner-lista-filmes">
+        <div th:each="filme: ${filmes}" class="filme">
+            <img th:src="@{${filme.imagem}}" alt="">
+            <h2 th:text="${filme.nome}"> nome do filme </h2>
+            <p th:text="${#dates.format(filme.data, 'yyyy-mm-dd')}">Ano do Filme</p>
+            <div class="filmes-buttons">
+                <a th:href="@{/filme/form/{id}(id=$ {filme.id})}">
+                    <button class="editar-btn"> Editar</button>
+                </a>
+                <a th:href="@{/filme/delete/{id}(id=${filme.id})}">
+                <button class = "deletar-btn">Deletar</button>
+                </a>
+            </div>
+          
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+
+
+
+</html>
